@@ -1,6 +1,6 @@
-#📝 Project Changelog – Titanic Dataset (Google Sheets)
+#Project Changelog – Titanic Dataset (Google Sheets)
 
-#✅ 1. Data Cleaning
+#1. Data Cleaning
 Step	Description
 1.1	Imported the Titanic dataset (train.csv) into Google Sheets.
 1.2	Replaced all blank cells with "null" using Find & Replace and Conditional Formatting for visual aid.
@@ -11,7 +11,7 @@ Step	Description
 → Last name (e.g., "Braund")
 → Title + Full name (e.g., "Mr. Owen Harris")
 
-#📊 2. Exploratory Data Analysis (EDA)
+#2. Exploratory Data Analysis (EDA)
 Step	Chart/Analysis	Description
 2.1	Gender Distribution	Created Pivot Table:
 → Rows: Sex
