@@ -1,0 +1,20 @@
+#📝 Project Changelog – Titanic Dataset (Google Sheets)
+
+#✅ 1. Data Cleaning
+Step	Description
+1.1	Imported the Titanic dataset (train.csv) into Google Sheets.
+1.2	Replaced all blank cells with "null" using Find & Replace and Conditional Formatting for visual aid.
+1.3	Used REGEXEXTRACT() to extract only the right-side numbers from the Ticket column.
+1.4	Fixed #VALUE! errors in the Ticket column using =IFERROR(REGEXEXTRACT(I2, "\d+$"), I2) to handle both numeric and alphanumeric cases.
+1.5	Checked for duplicate PassengerIds using =IF(COUNTIF(A:A, A2) > 1, "Duplicate", "Unique").
+1.6	Split the Name column into two parts using Data > Split text to columns with comma as separator:
+→ Last name (e.g., "Braund")
+→ Title + Full name (e.g., "Mr. Owen Harris")
+
+#📊 2. Exploratory Data Analysis (EDA)
+Step	Chart/Analysis	Description
+2.1	Gender Distribution	Created Pivot Table:
+→ Rows: Sex
+→ Values: PassengerId (count)
+→ Inserted Bar Chart / Pie Chart
+2.2	(Next step suggested)	Will analyze Survival Rate by Gender using Pivot Table and Stacked Bar Chart
