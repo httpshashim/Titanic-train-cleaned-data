@@ -1,49 +1,76 @@
-# Titanic-train-cleaned-data
-This project is part of my Data Science Internship at Prodigy InfoTech. The goal of this task is to perform data cleaning and exploratory data analysis (EDA) on the Titanic dataset from Kaggle.
+# 🛳️ Titanic Dataset – Data Cleaning & Exploratory Data Analysis (EDA)
 
-Project Overview
-Cleaned missing and inconsistent data (e.g., replacing blanks with "null")
+This project was completed as part of my Data Science Internship at **Prodigy InfoTech**. The aim is to clean the dataset and perform exploratory data analysis (EDA) to find patterns and insights using the Titanic dataset from [Kaggle](https://www.kaggle.com/c/titanic/data).
 
-Extracted numeric values from mixed-format columns (like Ticket)
+---
 
-Identified duplicate Passenger IDs
+## 📌 Objective
 
-Split and processed name strings into separate parts (e.g., Last Name, Title, Full Name)
+> **Task 2**: Perform data cleaning and exploratory data analysis (EDA) on a dataset of your choice, such as the Titanic dataset from Kaggle. Explore the relationships between variables and identify patterns and trends in the data.
 
-Created pivot tables and visualizations to explore patterns
+---
 
-Visualizations & Analysis
-Gender distribution (Pie Chart / Bar Chart)
+## 📁 Files in this Repository
 
-Passenger class distribution
+| File Name              | Description |
+|------------------------|-------------|
+| `titanic_cleaned.csv`  | Cleaned version of the Titanic dataset |
+| `titanic_charts.gsheet` or `.xlsx` | Google Sheets/Excel file with pivot tables and charts |
+| `README.md`            | Project summary and documentation |
+| `changelog.txt`        | Step-by-step record of what was done during cleaning and EDA |
 
-Age histogram
+---
 
-Survival rate by gender and class
+## 🧹 Data Cleaning Steps
 
-Average fare by class
+- Replaced all blank cells with `"null"` for consistency
+- Extracted only the numeric part of mixed-format ticket values using `REGEXEXTRACT()` and `IFERROR()`
+- Detected duplicate `PassengerId`s using `COUNTIF()`
+- Split the `Name` column into:
+  - **Last Name** (e.g., Braund)
+  - **Title + Full Name** (e.g., Mr. Owen Harris)
 
-Files Included
-titanic_cleaned.csv – Cleaned dataset used for EDA
+---
 
-titanic_charts.xlsx or .gsheet – Pivot tables & charts (if saved)
+## 📊 Exploratory Data Analysis (EDA)
 
-README.md – Project summary and steps followed
+### Charts Created:
+- ✅ Gender distribution (Bar Chart & Pie Chart)
+- ✅ Passenger class distribution
+- ✅ Age distribution (Histogram)
+- ✅ Survival rate by gender and class (Stacked Bar Chart)
+- ✅ Average fare by class
 
-changelog.txt – Step-by-step documentation of the cleaning and analysis process
+### Tools Used:
+- ✅ Google Sheets (Formulas, Pivot Tables, Charts)
+- ✅ Functions used: `IF`, `COUNTIF`, `REGEXEXTRACT`, `IFERROR`, `SPLIT`
 
-Tools Used
-Google Sheets for data manipulation and visualization
+---
 
-Formulas (IF, COUNTIF, REGEXEXTRACT, IFERROR) for cleaning logic
+## 🔍 Key Insights
 
-Pivot tables and charts for EDA
+- **Females** had a much higher survival rate than **males**
+- **1st Class** passengers were more likely to survive than those in 2nd or 3rd class
+- Most **3rd Class male passengers** did not survive
+- **Children** (especially in 1st or 2nd class) had relatively better chances of survival
+- **Fare** was positively correlated with survival
 
-Key Insights
-Women had higher survival rates than men
+---
 
-1st-class passengers had better chances of survival
+## 🛠️ Future Improvements
+- Use Python (Pandas/Matplotlib) or Tableau for advanced visualizations
+- Perform correlation analysis between numeric features
+- Predict survival using classification models (e.g., Decision Trees)
 
-Most 3rd-class male passengers did not survive
+---
 
-Children had relatively better survival chances
+## 🙌 Acknowledgements
+
+- [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
+- [Prodigy InfoTech](https://prodigyinfotech.dev/) – Internship Provider
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/mohamed-hashim2005/) for feedback or collaboration!
