@@ -1,3 +1,4 @@
+# 🔧 Due to formatting issues caused by exporting the Google Sheet to Excel (.xls), some glitches may appear in the file. For a clearer view of the data and pivot tables, a clean PDF version has been attached. Kindly refer to the PDF for accurate insights.
 # 🛳️ Titanic Dataset – Data Cleaning & Exploratory Data Analysis (EDA)
 
 This project was completed as part of my Data Science Internship at **Prodigy InfoTech**. The aim is to clean the dataset and perform exploratory data analysis (EDA) to find patterns and insights using the Titanic dataset from [Kaggle](https://www.kaggle.com/c/titanic/data).
